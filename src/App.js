@@ -3,30 +3,8 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-
-            <head>
-                <meta charset="utf-8" />
-                <meta name="theme-color" content="#000000" />
-                <meta name="description" content="Web site created using create-react-app" />
-                <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-                <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-                <title>My Portfolio</title>
-
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-                <meta name="author" content="Chelly Izraelov" />
-                {/* <!-- Favicon--> */}
-                <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-                {/* <!-- Font Awesome icons (free version)--> */}
-                <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-                {/* <!-- Google fonts--> */}
-                <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-                <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-                    type="text/css" />
-                {/* <!-- Core theme CSS (includes Bootstrap)--> */}
-                <link href="css/styles.css" rel="stylesheet" />
-            </head>
-
             <body id="page-top">
+
                 <noscript>You need to enable JavaScript to run this app.</noscript>
                 <div id="root"></div>
 
@@ -203,7 +181,6 @@ function App() {
                             <div class="divider-custom-line"></div>
                         </div>
 
-
                         {/* <!-- Contact Section Form--> */}
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
@@ -213,7 +190,7 @@ function App() {
                                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                             <br />
                                             <a href="" onclick="return false;"
-                                                style={{ paddingBottom: '40px', fontSize: '35px', textDecoration: 'none' }} >
+                                                style={{ paddingBottom: '40px', fontSize: '35px', textDecoration: 'none' }}>
                                                 <i class="fas fa-phone-alt"></i> +972-54-7570024
                                             </a>
                                             <br />
@@ -418,6 +395,7 @@ function App() {
                     </div>
                 </div>
 
+
                 {/* <!-- Portfolio Modal 3--> */}
                 <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
                     aria-labelledby="portfolioModal3Label" aria-hidden="true">
@@ -569,19 +547,8 @@ function App() {
                         </div>
                     </div>
                 </div>
-
-                {/* <!-- Bootstrap core JS--> */}
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-                {/* <!-- Third party plugin JS--> */}
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-                {/* <!-- Contact form JS--> */}
-                <script src="assets/mail/jqBootstrapValidation.js"></script>
-                <script src="assets/mail/contact_me.js"></script>
-                {/* <!-- Core theme JS--> */}
-                <script src="scripts.js"></script>
-
             </body>
+
         </div>
     );
 }
