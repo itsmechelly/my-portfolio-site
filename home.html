@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -63,7 +64,8 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Software Developer - Backend Developer - Java & Spring</p>
+            <p class="masthead-subheading font-weight-light mb-0">Software Developer - Backend Developer - Java & Spring
+            </p>
         </div>
     </header>
 
@@ -363,7 +365,8 @@
                                 </a>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">
-                                    <i class="fas fa-tools"></i>  Link to the project will be activated soon, thanks for your patience.
+                                    <i class="fas fa-tools"></i> Link to the project will be activated soon, thanks for
+                                    your patience.
                                     <br /><br />
                                     A coupon management system that contains 3 types of users:
                                     <br />
@@ -420,7 +423,8 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/clinicwebsite.png" alt="" />
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/clinicwebsite.png"
+                                    alt="" />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">This portfolio page is under construction these days, the information
                                     will be updated here as soon as possible ... <br />Thank you</p>
@@ -599,72 +603,8 @@
     <!-- Contact form JS-->
     <script src="assets/mail/jqBootstrapValidation.js"></script>
     <script src="assets/mail/contact_me.js"></script>
-
-    <script>
-        (function ($) {
-            "use strict"; // Start of use strict
-            // Smooth scrolling using jQuery easing
-            $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html, body').animate({
-                            scrollTop: (target.offset().top - 71)
-                        }, 1000, "easeInOutExpo");
-                        return false;
-                    }
-                }
-            })
-
-            // Scroll to top button appear
-            $(document).scroll(function () {
-                var scrollDistance = $(this).scrollTop();
-                if (scrollDistance > 100) {
-                    $('.scroll-to-top').fadeIn();
-                } else {
-                    $('.scroll-to-top').fadeOut();
-                }
-            });
-
-            // Closes responsive menu when a scroll trigger link is clicked
-            $('.js-scroll-trigger').click(function () {
-                $('.navbar-collapse').collapse('hide');
-            });
-
-            // Activate scrollspy to add active class to navbar items on scroll
-            $('body').scrollspy({
-                target: '#mainNav',
-                offset: 80
-            });
-
-            // Collapse Navbar
-            var navbarCollapse = function () {
-                if ($("#mainNav").offset().top > 100) {
-                    $("#mainNav").addClass("navbar-shrink");
-                } else {
-                    $("#mainNav").removeClass("navbar-shrink");
-                }
-            };
-            // Collapse now if page is not at top
-            navbarCollapse();
-            // Collapse the navbar when page is scrolled
-            $(window).scroll(navbarCollapse);
-
-            // Floating label headings for the contact form
-            $(function () {
-                $("body").on("input propertychange", ".floating-label-form-group", function (e) {
-                    $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-                }).on("focus", ".floating-label-form-group", function () {
-                    $(this).addClass("floating-label-form-group-with-focus");
-                }).on("blur", ".floating-label-form-group", function () {
-                    $(this).removeClass("floating-label-form-group-with-focus");
-                });
-            });
-
-        })(jQuery); // End of use strict
-
-    </script>
+    <!-- Core theme JS-->
+    <script src="scripts.js"></script>
 
 </body>
 
