@@ -64,7 +64,8 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Backend Developer - Java & Spring - Full Stack Developer
+            <p class="masthead-subheading font-weight-light mb-0">Backend Developer - Java & Spring - Full Stack
+                Developer
             </p>
         </div>
     </header>
@@ -96,6 +97,17 @@
                 </div>
                 <!-- Portfolio Item 2-->
                 <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/mybabymicroservices.png" alt="" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                         <div
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -103,17 +115,6 @@
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
                         <img class="img-fluid" src="assets/img/portfolio/clinicwebsite.png" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/comingsoon.png" alt="" />
                     </div>
                 </div>
                 <!-- Portfolio Item 4-->
@@ -124,7 +125,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/comingsoon.png" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/recursion.png" alt="" />
                     </div>
                 </div>
                 <!-- Portfolio Item 5-->
@@ -135,7 +136,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/comingsoon.png" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/designpatterns.png" alt="" />
                     </div>
                 </div>
                 <!-- Portfolio Item 6-->
@@ -146,7 +147,7 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/comingsoon.png" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/momsecipes.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -425,6 +426,67 @@
     </div>
 
     <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal3Label">Baby Microservice</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <a href="https://my-baby-microservice-site.herokuapp.com/" target="_blank">
+                                    <img class="img-fluid rounded mb-5"
+                                        src="assets/img/portfolio/mybabymicroservices.png" alt="" />
+                                </a>
+                                <!-- Portfolio Modal - Text-->
+                                <h2>BIG & AWESOME MICROSERVICE <br /> is Coming Soon</h2>
+                                <p class="mb-5">
+                                    I am working hard to finish the development of other microservice project.<br />
+                                    SOON - WILL - BE - LAUNCHED!<br />
+                                    Meanwhile... I wanted to show you my skills in this field!
+                                <ul class="b">
+                                    <li>Config Server -> Distance Configuration file located in Github.<br />
+                                        Local Spring Configuration Server - Tomcat.</li><br />
+                                    <li>Service A -> Function as Admin server.<br />
+                                        Use Ribbon Load Balancer & Hystrix Circuit Breaker behind the scenes.</li><br />
+                                    <li>Service B -> Several server shows, function as Customer server.<br />
+                                        Use Consul Discovery behind the scenes.</li><br />
+                                    <li>API Gateway Service -> Spring API Gateway.</li><br />
+                                    <li>Dashboard Service -> ​Hystrix Dashboard.</li><br />
+                                    <li>PLUS -> Feign Clients & Rest Template use.</li><br />
+                                </ul>
+                                </p>
+                                <a class="btn btn-primary" href="https://my-baby-microservice-site.herokuapp.com/"
+                                    target="_blank">
+                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    Browse Website
+                                </a>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3-->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
         aria-labelledby="portfolioModal2Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
@@ -449,6 +511,7 @@
                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/clinicwebsite.png"
                                     alt="" />
                                 <!-- Portfolio Modal - Text-->
+                                <h1>Coming Soon...</h1>
                                 <p class="mb-5">This portfolio page is under construction these days, the information
                                     will be updated here as soon as possible ... <br />Thank you</p>
                                 <button class="btn btn-primary" data-dismiss="modal">
@@ -462,47 +525,6 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal3Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal3Label">Coming Soon...</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/comingsoon.png" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">This portfolio page is under construction these days, the information
-                                    will be updated here as soon as possible ... <br />Thank you</p>
-                                <button class="btn btn-primary" data-dismiss="modal">
-                                    <i class="fas fa-times fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
     <!-- Portfolio Modal 4-->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
@@ -518,7 +540,7 @@
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal4Label">Coming Soon...</h2>
+                                    id="portfolioModal4Label">Recursion is FUN!<br /> Data Structure Game</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -526,8 +548,9 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/comingsoon.png" alt="" />
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/recursion.png" alt="" />
                                 <!-- Portfolio Modal - Text-->
+                                <h1>Coming Soon...</h1>
                                 <p class="mb-5">This portfolio page is under construction these days, the information
                                     will be updated here as soon as possible ... <br />Thank you</p>
                                 <button class="btn btn-primary" data-dismiss="modal">
@@ -556,7 +579,7 @@
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal5Label">Coming Soon...</h2>
+                                    id="portfolioModal5Label">Design Patterns Generator</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -564,8 +587,10 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/comingsoon.png" alt="" />
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/designpatterns.png"
+                                    alt="" />
                                 <!-- Portfolio Modal - Text-->
+                                <h1>Coming Soon...</h1>
                                 <p class="mb-5">This portfolio page is under construction these days, the information
                                     will be updated here as soon as possible ... <br />Thank you</p>
                                 <button class="btn btn-primary" data-dismiss="modal">
@@ -594,7 +619,7 @@
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal6Label">Coming Soon...</h2>
+                                    id="portfolioModal6Label">Mom's Recipes</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -602,8 +627,9 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/comingsoon.png" alt="" />
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/momsecipes.png" alt="" />
                                 <!-- Portfolio Modal - Text-->
+                                <h1>Coming Soon...</h1>
                                 <p class="mb-5">This portfolio page is under construction these days, the information
                                     will be updated here as soon as possible ... <br />Thank you</p>
                                 <button class="btn btn-primary" data-dismiss="modal">

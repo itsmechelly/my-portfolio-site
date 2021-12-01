@@ -7638,6 +7638,11 @@ button.bg-dark:focus {
   margin-left: 3rem !important;
 }
 
+ul.b {
+    font-size: smaller !important;
+    list-style-type: square;
+}
+
 .p-0 {
   padding: 0 !important;
 }
