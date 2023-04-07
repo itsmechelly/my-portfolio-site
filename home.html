@@ -842,7 +842,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title -->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal7Label">Recursion is FUN!<br /> Data Structure Game</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal7Label">NBA Players Data<br /> Application</h2>
                                 <!-- Icon Divider -->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -854,32 +854,28 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/nba-players.bmp" alt="" />
                                 </a>
                                 <!-- Portfolio Modal - Text -->
-                                <h2>KOTERET RASHIT</h2>
-                                <hr /><br/>
-                                <p class="mb-5">
-                                    This application bla bla bla
-                                    <br/>
-                                    This application bla bla bla
-                                    <br/>                                    
+                                <h2>NBA Players Data Application</h2>
+                                <hr />
+                                <p class="mb-5">                               
                                     <h3>🤔 What is the purpose <br/>of this application?</h3>
-                                    This application bla bla bla<br/>
-                                    This application bla bla bla<br/>
-                                    This application bla bla bla<br/><br/><br/>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/couponsystem-diagram.png" alt="coupon system image" /><br/>
-                                    <h3>OD KOTERET</h3>
-                                    This application bla bla bla<br/>
-                                    This application bla bla bla<br/>
-                                    This application bla bla bla<br/><br/><br/>
-                                    <h3>How to use this Application?</h3>
-                                    <i class="fas fa-tools"></i> 
-                                    NOTICE! This site is still under construction! <br />
-                                    <i class="fas fa-tools"></i> 
-                                    Registration will be activated soon!<br /><br />
-                                    <h6>👉 OD KOTERET</h6>
-                                    Admin: ➡️ <b>e-mail:</b> admin@admin.com <b>password:</b> admin<br />
-                                    Company: ➡️ <b>e-mail:</b> zootAllures@company.com <b>password:</b> zootAllures<br />
-                                    Customer: ➡️ <b>e-mail:</b> cust1@cust.com <b>password:</b> 1111<br /><br />
-                                    <br/>
+                                    The main purpose of this program is to use information that derived from external API.<br/><br/>
+                                    The data will be imported to a local cache memory (including scheduler that pulls the details every 15 minutes and update the persistent caching if necessary).<br/><br/>
+                                    <a href="https://drive.google.com/file/d/1n7liuSnzCPbE3f80Vz7-iz9GVnbwh1_m/view" target="_blank"><img class="img-fluid rounded mb-5" src="assets/img/portfolio/nba-players-diagram.png" alt="nba players diagram image" />
+                                    </a><br/>
+                                    <h3>💬 What information does the external API contain?</h3>
+                                    <a href="https://app.balldontlie.io/#players" target="_blank">Balldontlie’s API</a> is used to acquire information about NBA Players and their teams.<br/><br/><br/>
+                                    <h3>💬 Which technique did I used for parsing?</h3>
+                                    ➡️ The 1st approach: Parse CSV file and return the data in a new CSV file<br /><br />
+                                    ➡️ The 2nd approach: Parse CSV file and return the data as an Object<br /><br />
+                                    ➡️ The 3rd approach: Parse CSV file and return the data as a Json Object<br /><br />
+                                    ➡️ The 4th approach: Parse CSV file and return the data as a Json Object with WebSocket<br /><br /><br/>
+                                    <h3>🤔 How it works?</h3>
+                                    I created Spring MVC application that contains 2 Entities: Player and Team.<br /><br />
+                                    The program uses a local file named players.csv that contains 9 rows with each row representing an NBA player.<br /><br />
+                                    A scheduler runs every 15 minutes, parse and process the local CSV file(players.csv) line by line, pull additional information about each player from the external API, and add it into the database that serve here as a local cache memory system (the caching based on the player id).<br /><br />
+                                    For caching data, I used Spring Hibernate JPA + SQL.<br /><br />
+                                    For scheduling every 15 minutes, I used Spring Scheduling.<br /><br />
+                                    To receive the data that was located in the cache memory – I used the Spring MVC layers: Controller, Service and Repository.<br /><br /><br/>
                                     <h3>⚒️ Tech Stack</h3>
                                     <h6>Language and Frameworks</h6>
                                     Java Language<br/>
@@ -889,23 +885,20 @@
                                     Spring JPA (MySQL Driver)<br/>
                                     SQL<br/>
                                     MySQL<br/><br/>
-                                    <h6>Authentication & Authorization</h6>
-                                    JSON Web Token (JWT) library<br/><br/>
-                                    <h6>Scheduling Mechanisms</h6>
-                                    Spring Scheduling<br/><br/>
+                                    <h6>Libraries and External API’s</h6>
+                                    Apache Commons CSV Library<br/>
+                                    Balldontlie’s API<br/>
+                                    WebSocket API<br/><br/>
+                                    <h6>Caching Mechanisms</h6>
+                                    Spring Scheduling<br/>
+                                    Spring Hibernate JPA + MySQL as a local cache memory<br/><br/>
                                     <h6>Architecture & Design Patterns</h6>
-                                    Spring MVC Layers<br/>
-                                    Singleton Pattern<br/>
-                                    Facade Pattern<br/>
-                                    Factory Pattern<br/><br/>
-                                    <h6>Communication between Client side and Server side</h6>
-                                    Restful API<br/><br/>
+                                    Spring MVC Layers<br/><br/>
+                                    <h6>Formats I used for parsing and using data</h6>
+                                    CSV file<br/>
+                                    Json Object Format<br/>
+                                    Spring Beans Objects<br/><br/>
                                     <h6>Client-Side</h6>
-                                    React<br/>
-                                    JavaScript<br/>
-                                    Typescript<br/>
-                                    Bootstrap 5<br/>
-                                    Material UI<br/>
                                     Bootstrap 5<br/>
                                     HTML<br/>
                                     CSS<br />
