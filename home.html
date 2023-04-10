@@ -158,7 +158,7 @@
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/comingsoon.png" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/delivery-application.png" alt="delivery application image" />
                     </div>
                 </div>
                 <!-- Portfolio Item 11 -->
@@ -1014,7 +1014,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title -->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal10Label">Recursion is FUN!<br /> Data Structure Game</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal10Label">Delivery Application</h2>
                                 <!-- Icon Divider -->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -1022,68 +1022,94 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image -->
-                                <a href="https://couponexpress.herokuapp.com/" target="_blank">
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/comingsoon.png" alt="" />
+                                <a href="http://delivery-application.s3-website-eu-west-1.amazonaws.com/" target="_blank">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/delivery-application.png" alt="delivery application image" />
                                 </a>
                                 <!-- Portfolio Modal - Text -->
-                                <h2>KOTERET RASHIT</h2>
-                                <hr /><br/>
-                                <p class="mb-5">
-                                    This application bla bla bla
-                                    <br/>
-                                    This application bla bla bla
-                                    <br/>                                    
-                                    <h3>🤔 What is the purpose <br/>of this application?</h3>
-                                    This application bla bla bla<br/>
-                                    This application bla bla bla<br/>
-                                    This application bla bla bla<br/><br/><br/>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/couponsystem-diagram.png" alt="key app image" /><br/>
-                                    <h3>OD KOTERET</h3>
-                                    This application bla bla bla<br/>
-                                    This application bla bla bla<br/>
-                                    This application bla bla bla<br/><br/><br/>
-                                    <h3>How to use this Application?</h3>
-                                    <i class="fas fa-tools"></i> 
-                                    NOTICE! This site is still under construction! <br />
-                                    <i class="fas fa-tools"></i> 
-                                    Registration will be activated soon!<br /><br />
-                                    <h6>👉 OD KOTERET</h6>
-                                    Admin: ➡️ <b>e-mail:</b> admin@admin.com <b>password:</b> admin<br />
-                                    Company: ➡️ <b>e-mail:</b> zootAllures@company.com <b>password:</b> zootAllures<br />
-                                    Customer: ➡️ <b>e-mail:</b> cust1@cust.com <b>password:</b> 1111<br /><br />
-                                    <br/>
+                                <h2>Delivery Application</h2>
+                                <hr />
+                                <p class="mb-5">                              
+                                    Note: This web page is only a preview to the repository on github.<br/>
+                                    <!-- Backend Development is in my blood, this is the reason I developed only the server side for this application.<br/> -->
+                                    <!-- I created this HTML page just for FUN and to make it more accessible and convenient for you.<br/> -->
+                                    To see the Delivery Application source code <a href="https://github.com/itsmechelly/delivery-application" target="_blank">CLICK HERE!</a>
+                                    <h3>🤔 What is the purpose of this application?</h3>
+                                    This project written in Java language and Spring Framework, represent Implementation of a Delivery API containing the following functionality:<br/><br/>
+                                    
+                                    <h5>💬 Timeslot</h5>
+                                    A delivery window containing start time, end time and supported addresses.<br/><br/>
+                                    👉 The two sources below will be fetched in order to validate the timeslots:<br/>
+                                    • A local static json file named <b>courierAPI.json</b> is loaded when the program is starting. This file contains the available timeslots for the upcoming week.<br/>
+                                    • Courier timeslots that fall on holidays will be excluded.<br/>
+                                    For this part I have used <a href="https://holidayapi.com/docs" target="_blank">HolidayAPI</a>.<br/><br/>
+                                    
+                                    👉 Each timeslot can be used for 2 deliveries.<br/><br/>
+                                    
+                                    <h5>💬 Delivery</h5>
+                                    Contains status & selected timeslot.
+                                    Business capacity - the system supports up to 10 deliveries per day.
+                                    To make sure that the system supports 10 deliveries per day, I used Github's library named Bucket4j.<br/><br/>
+                                    
+                                    <h5>💬 Address</h5>
+                                    I have used <a href="https://www.geoapify.com/geocoding-api" target="_blank">Geoapify API</a> to locate correct addresses into an object that holds the address data (such as: street, line1, line2, country, postcode, etc...).<br/><br/>
+                                    
+                                    <h3>Extra Details</h3>
+                                    NOTE: This program is really simple, at this moment the program does not support concurrent requests. These days I am working on a new project to upgrade this one by using Spring WebFlux To handle concurrent requests.<br/><br/>
+        
+                                    <h3>External API <br/>I have used in this project</h3>
+                                    <a href="https://www.geoapify.com/geocoding-api" target="_blank">Geoapify</a><br/>
+                                    To locate correct addresses.<br/><br/>
+                                    <a href="https://holidayapi.com/docs" target="_blank">HolidayAPI</a><br/>
+                                    To exclude holidays from timeslots.<br/><br/>
+                                    <b>Bucket4j Github's library</b><br/>
+                                    To manage system delivery capacity per day.
+
+                                    <br/><br/><br/>
                                     <h3>⚒️ Tech Stack</h3>
-                                    <h6>Language and Frameworks</h6>
-                                    Java Language<br/>
-                                    Spring Framework<br/><br/>
-                                    <h6>Database</h6>
-                                    Spring Hibernate<br/>
-                                    Spring JPA (MySQL Driver)<br/>
-                                    SQL<br/>
-                                    MySQL<br/><br/>
-                                    <h6>Authentication & Authorization</h6>
-                                    JSON Web Token (JWT) library<br/><br/>
-                                    <h6>Scheduling Mechanisms</h6>
-                                    Spring Scheduling<br/><br/>
-                                    <h6>Architecture & Design Patterns</h6>
-                                    Spring MVC Layers<br/>
-                                    Singleton Pattern<br/>
-                                    Facade Pattern<br/>
-                                    Factory Pattern<br/><br/>
-                                    <h6>Communication between Client side and Server side</h6>
-                                    Restful API<br/><br/>
-                                    <h6>Client-Side</h6>
-                                    React<br/>
-                                    JavaScript<br/>
-                                    Typescript<br/>
-                                    Bootstrap 5<br/>
-                                    Material UI<br/>
-                                    Bootstrap 5<br/>
-                                    HTML<br/>
-                                    CSS<br />
+                                    <b>Language & Framework:</b>
+                                    <br/>
+                                    Java
+                                    <br/>
+                                    Spring Framework
+                                    <br/><br/>
+                                    
+                                    <b>Database:</b>
+                                    <br/>
+                                    SQL
+                                    <br/>
+                                    MySQL
+                                    <br/>
+                                    Spring Hibernate JPA (SQL)
+                                    <br/><br/>
+                                    
+                                    <b>Libraries and External API’s:</b>
+                                    <br/>
+                                    <a href="https://www.geoapify.com/geocoding-api" target="_blank">Geoapify</a>
+                                    <br/>
+                                    <a href="https://holidayapi.com/docs" target="_blank">HolidayAPI</a>
+                                    <br/>
+                                    Bucket4j Github's library
+                                    <br/><br/>
+                                    
+                                    <b>Caching & Scheduling Mechanisms:</b>
+                                    <br/>
+                                    Spring Scheduling
+                                    <br/>
+                                    Spring Hibernate JPA + MySQL as a local cache memory
+                                    <br/><br/>
+                                    
+                                    <b>Client-Side UI:</b>
+                                    <br/>
+                                    HTML
+                                    <br/>
+                                    CSS
+                                    <br/>
+                                    Bootstrap 5
+                                    <br/>
+                                    JavaScript
                                     <br /><hr /><br />
                                 </p>
-                                <a class="btn btn-primary" href="https://couponexpress.herokuapp.com/" target="_blank">
+                                <a class="btn btn-primary" href="http://delivery-application.s3-website-eu-west-1.amazonaws.com/" target="_blank">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                     Browse Website
                                 </a>
